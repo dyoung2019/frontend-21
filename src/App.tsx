@@ -1,7 +1,6 @@
 import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
-import logo from './logo.png';
-import './App.css';
+import Demo from './Demo'
 
 function App() {
   // Create the count state.
@@ -14,25 +13,7 @@ function App() {
   // Return the App component.
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          Page has been open for <code>{count}</code> seconds.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://preactjs.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn Preact
-          </a>
-        </p>
-      </header>
+      <Demo></Demo>
     </div>
   );
 }
